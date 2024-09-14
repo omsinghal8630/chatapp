@@ -17,7 +17,7 @@ export const SocketProvider = ({ children }) =>
     {
         if (authUser)
         {
-            const socket = io("http://localhost:4002", {
+            const socket = io("https://chatapp-8mg1.onrender.com", {
                 query: {
                     userId: authUser.user._id,
                 },
